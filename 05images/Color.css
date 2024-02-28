@@ -144,6 +144,7 @@ div.gallery figcaption {
 div.game {
     padding: 1rem 0;
     font-size: .7rem;
-    color: #b64e11
+    color: #b64e11;
+    float: right;
 }
 
