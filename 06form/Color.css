@@ -1,0 +1,240 @@
+/*--- this is my css page. ---*/
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/*--- this is where I format the header ---*/
+
+header {
+background-color:#fc2020;
+padding: 1rem 2vw;
+}
+header p {
+    letter-spacing: .5px;
+}
+header h1, p{
+    margin: 0;
+    color: #fff;
+}
+/*--- this is where I format the navigation ---*/
+nav{
+    background-color:#f2f2f2;
+}
+nav ul{
+    list-style-type:none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #024873;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav a:hover{
+    color: grey;
+}
+nav li.active {
+    background-color:white; 
+    color: #024873;
+}
+
+/*--- this is where I format the section ---*/
+
+main {
+    padding: 1rem 2vw;
+    
+}
+
+main h1{
+    color: #b40412;
+}
+
+main h2{
+    color: #024873;
+}
+
+main p{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+
+main dl dt {
+color: #b40412;
+font-weight:700;
+}
+
+main dl dd{
+    color:#024873;
+    font-size: .9rem;
+}
+
+main ul{
+    list-style-type:square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .7rem;
+}
+
+address {
+    font-style: normal;
+    color: #fff;
+    background-color: #fc2020;
+    padding: .5rem;
+    width: 25rem;
+    border: 2px solid black;
+    border-radius: .8rem;
+}
+address p {
+    color:#fff;
+}
+
+ol li {
+    list-style-type: circle;
+    padding: .5rem;
+}
+/*--- this is where I format the footer section ---*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+
+dl dt, dl dd {
+ padding: 0.25rem;
+}
+
+footer a{
+    color: #024873;
+}
+footer p {
+    color: #024873;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .7rem;
+    color: #b64e11
+}
+
+div.game {
+    padding: 1rem 0;
+    font-size: .7rem;
+    color: #b64e11;
+    float: right;
+}
+/* form stuff here */
+.myform fieldset{
+    border: 1px solid #394273;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myform legend {
+    color:  #394273;
+    font-size: .8rem;
+}
+
+.myform label {
+    margin: .5rem;
+}
+.myform label {
+    display: block;
+}
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform [type=email], .myform [type=number], .myform textarea{
+    display: block;
+}
+
+.form2 label{
+    display:block;
+}
+.form4 label{
+    display: block;
+}
+.form3 input {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    background-color: rgba(156,51,53,0.1);
+
+}
+.form3 label{
+    display:block;
+}
+.comment{
+    display:block;
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    background-color: rgba(156,51,53,0.1);
+}
+.myform select, .myform [type=text], .myform [type=tel],.myform [type=email], .myform [type=number], .myform textarea{
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+}
+
+.myform textarea{
+    height: 6rem;
+}
+
+.myform :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.myform [type=submit]{
+    background-color: #fc2020;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+
+
+/* footer stuff here */
+footer {
+    border-top: solid #ccc 2px;
+    text-align: center;
+    color: #024873;
+    font-size: .7rem;
+    padding: 1rem 0;
+    clear: both;
+}
+footer a {
+    color: #024873;
+}
