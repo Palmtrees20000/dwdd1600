@@ -98,6 +98,8 @@ nav li.active a {
             text-transform: uppercase;
             text-align: center;
             border-bottom: solid 2px #fff;
+            box-sizing: border-box;
+
         }
         
         nav .active a {
