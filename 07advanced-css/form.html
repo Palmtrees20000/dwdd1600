@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <link rel="stylesheet" href="Color.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <meta name="author" content="Palmer Charles">
+    <meta name="description" content="Learn and travel to your favorite Nintendo locations">
+    <title>Nintendo Travels</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="device-width, intial-scale=1"> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body id="top">
+    <!--Start of my page header-->
+    <header>
+        <img src="images/first_design.png" alt="site logo" width="100" height="67">
+        <div>
+        <h1>Welcome to Nintendo travels</h1>
+        <p>Know your destination</p>
+        </div>
+    </header>
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Nintendo travels</a></li>
+            <li><a href="creators.html">Who Were the creators of Nintendo and Nintendo Travels?</a></li>
+            <li><a href="gallary.html">Gallery of areas to travel to</a></li>
+            <li class="active"><a href="form.html">Book now</a></li>
+        </ul>
+       </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Reserve a spot</h1>
+       
+            <!-- form information here...-->
+        <form method="get" class="myform" action="thanks.html">
+<fieldset>
+    <legend>Customer Information</legend>
+            <label>First Name: <input type="text" name="fname" required></label>
+            <label>Last Name: <input type="text" name="lname" required></label>
+            <label>Phone Number: <input type="tel" name="phone" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>How old are you?: <input type="number" name="quantity" required min="1" max="120"></label>
+               
+</fieldset>
+
+<fieldset>
+    <legend>Travel Methods</legend>
+        <label><input type="radio" name="method" value="airplane">Flying (destination time may vary)</label>
+        <label><input type="radio" name="method" value="boat">Cruise (destination time may vary)</label>
+        <label><input type="radio" name="method" value="drive">Car (destination time may vary)</label>
+</fieldset>
+
+<fieldset>
+    <legend>Travel Options</legend>
+        <label for="week">Select a week you'll be traveling:</label>
+        <input id="week" type="week" name="week">
+            <label for="week2">Week traveling back home</label>
+            <input id="week2" type="week" name="week2">
+            <label for="quantity2">Number of particpants in party:</label>
+            <input id="quantity2" type="number" name="quantity2" min="1" max="15">
+          
+
+      <p>Select a seat and a class:</p>
+        <label><input type="checkbox" name="first" value="porch">First Class</label>
+        <label><input type="checkbox" name="second" value="deck">Second class</label>
+        <label><input type="checkbox" name="Mystery" value="driveway">Mystery seat</label>
+        <label><input type="checkbox" name="Cockpit" value="garage">Cockpit seat with captains</label>
+</fieldset>
+
+    <fieldset>
+        <legend>Preferred Travel Time</legend>
+        <select name="Time">
+    <option value="none">Please select</option>
+    <option value="morning">Between 7:00 am and 12:00 pm</option>
+    <option value="afternoon"> between 2:00 pm and 5:00 pm</option>
+    <option value="evening"> between 5:00 pm and 10:00 pm</option>
+        </select>
+    </fieldset>
+<label>Comments: <textarea class="comment" name="comments">Please add additional requests</textarea> </label>
+    <input type="submit" value="Let's Travel">
+
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2024 | Palmer Charles &bull; <a href="mailto:sampleemail@gmail.com">Email Here</a></p>
+    </footer>
+</body>
+</html>
