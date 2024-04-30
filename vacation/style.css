@@ -1,0 +1,344 @@
+/*--- this is my css page. ---*/
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/*--- this is where I format the header ---*/
+
+header {
+background-color:#fff;
+padding: 1rem 2vw;
+display: flex;
+align-items: flex-end;
+max-width: 2000px;
+}
+header p {
+    letter-spacing: .5px;
+}
+header h1, p{
+    margin: 0;
+    color: #6d510b;
+    
+}
+/*--- this is where I format the navigation ---*/
+nav{
+    background-color:#f2f2f2;
+    max-width: 2000px;
+}
+nav ul{
+    list-style-type:none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #3f2d80;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav a:hover{
+    color: grey;
+}
+nav li.active {
+    background-color:white; 
+    color: #024873;
+}
+    /* navigation stuff here */
+
+/*Media Queries small Screen Here*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        flex-direction: column;
+}
+nav a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    border: solid 1px #aaaaaa;
+    color: #024873;
+    margin: 3px;
+    border-radius: 20px;
+    margin: 3px;
+}
+nav li.active a {
+    Background-color: #e37272;
+    Color: white;
+    Background-image: linear-gradient(to bottom, #6d510b, #73022a);
+}
+}
+
+/*Media Queries Large Screen Here*/
+@media only screen and (min-width: 601px) {
+        nav {
+            border-top: solid 1px #E0E6E6;
+            
+        }
+        nav ul {
+            margin: 0;
+            padding: 0 2vw;
+            list-style-type: none;
+            display: flex;
+        }
+        nav a {
+            display: block;
+            padding: 1.2rem 1rem .3rem 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #024873;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 2px #fff;
+            box-sizing: border-box;
+
+        }
+        
+        nav .active a {
+            border-bottom: solid 2px #6d510b;
+        }
+        nav a:hover {
+            color: #000;
+        }
+        body {
+            margin-left: 4rem;
+            margin-right: 4rem;
+            
+        }
+}
+
+
+/*--- this is where I format the section ---*/
+
+main {
+    padding: 1rem 2vw;
+    max-width: 2000px;
+}
+
+main h1{
+    color: #69863c;
+    text-align: center;
+}
+
+main h2{
+    color: #024873;
+}
+
+main p{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+
+main dl dt {
+color: #024873;
+font-weight:700;
+}
+
+main dl dd{
+    color:#024873;
+    font-size: .9rem;
+}
+
+main ul{
+    list-style-type:square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .7rem;
+}
+
+address {
+    font-style: normal;
+    color: #fff;
+    background-color: #69863c;
+    padding: .5rem;
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: .8rem;
+}
+address p {
+    color:#fff;
+}
+
+ol li {
+    list-style-type: circle;
+    padding: .5rem;
+}
+
+/*--- this is where I format the footer section ---*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+    max-width: 2000px;
+}
+
+dl dt, dl dd {
+ padding: 0.25rem;
+}
+
+footer a{
+    color: #024873;
+}
+footer p {
+    color: #024873;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 160px;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .7rem;
+    color: #024873;
+}
+
+div.game {
+    padding: 1rem 0;
+    font-size: .7rem;
+    color: #b64e11;
+    float: right;
+}
+/* form stuff here */
+.myform fieldset{
+    border: 1px solid #394273;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myform legend {
+    color:  #394273;
+    font-size: .8rem;
+}
+
+.myform label {
+    margin: .5rem;
+}
+.myform label {
+    display: block;
+}
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform [type=email], .myform [type=number], .myform textarea{
+    display: block;
+}
+
+.form2 label{
+    display:block;
+}
+.form4 label{
+    display: block;
+}
+.form3 input {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    background-color: rgba(156,51,53,0.1);
+
+}
+.form3 label{
+    display:block;
+}
+.comment{
+    display:block;
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    background-color: rgba(156,51,53,0.1);
+}
+.myform select, .myform [type=text], .myform [type=tel],.myform [type=email], .myform [type=number], .myform textarea{
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+}
+
+.myform textarea{
+    height: 6rem;
+}
+
+.myform :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.myform [type=submit]{
+    background-color: #20bbab;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+header div {
+    padding: 2vw;
+    text-align: left;
+}
+
+/* Video stuff here */
+iframe {
+    width: 100%;
+
+}
+
+/* footer stuff here */
+footer {
+    border-top: solid #ccc 2px;
+    text-align: center;
+    color: #024873;
+    font-size: .7rem;
+    padding: 1rem 0;
+    clear: both;
+}
+footer a {
+    color: #024873;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+img.hero {
+    width: 100%;
+    height: auto;
+}
+
+figure img:hover {
+    box-shadow: 0 0 15px rgba(24, 24, 24, 0.2);
+
+}
